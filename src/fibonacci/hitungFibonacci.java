@@ -20,6 +20,7 @@ public class hitungFibonacci {
         tampilJudul(identitas);
         int n = tampilInput();
         BigInteger hasil = fibo(n);
+        tampilHasil(n, hasil);
     }
 private static int tampilInput() {
     Scanner scanner = new Scanner(System.in);
@@ -41,5 +42,8 @@ private static BigInteger fibo(int n) {
 }
     
     return hasil[n-1];
+}
+private static void tampilHasil (int n, BigInteger hasil) {
+    System.out.println("Bilangan Fibonacci ke-"+ n + " : " + hasil);
 }
 }
