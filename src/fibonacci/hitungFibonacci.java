@@ -4,11 +4,7 @@
  * and open the template in the editor.
  */
 package fibonacci;
-
-/**
- *
- * @author WINDOWS 10
- */
+import java.util.Scanner;
 public class hitungFibonacci {
     private static void tampilJudul(String identitas) {
         System.out.println("Identitas : "+ identitas);
@@ -21,6 +17,14 @@ public class hitungFibonacci {
         String identitas = "Adelia Fitri Kristanti / X RPL 2 / 02";
         
         tampilJudul(identitas);
+        int n = tampilInput();
     }
-
+private static int tampilInput() {
+    Scanner scanner = new Scanner(System.in);
+    
+    System.out.print("Bilangan ke-: ");
+    int n = scanner.nextInt();
+    
+    return n;
+}
 }
